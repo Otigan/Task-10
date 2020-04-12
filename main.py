@@ -53,11 +53,11 @@ class CustomLayout(FloatLayout):
 
 
 listOfModels = [
-    CustomLayout(image="https://sun9-24.userapi.com/c205716/v205716966/a5cdf/pdBiJiHmbgA.jpg", text1="Title 1",
+    CustomLayout(image="images/image1.jpg", text1="Title 1",
                  text2="Subtitle 2"),
-    CustomLayout(image="https://sun9-62.userapi.com/c543108/v543108742/6511d/dF8rXJdaI2Y.jpg", text1="Title 2",
+    CustomLayout(image="images/image2.jpg", text1="Title 2",
                  text2="Subtitle 2"),
-    CustomLayout(image="https://sun1-94.userapi.com/NuCBUBOkhhHBPHCwjmBNQzfAOUNvikkiApepLg/Vzuo5DP2zIc.jpg",
+    CustomLayout(image="images/image3.jpg",
                  text1="Title 3", text2="Subtitle 3")]
 
 

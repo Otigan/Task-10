@@ -75,5 +75,5 @@ class MainApp(App):
         return carousel
 
 
-if __name__ == '__main__':
-    MainApp().run()
+
+MainApp().run()

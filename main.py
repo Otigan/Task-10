@@ -20,8 +20,8 @@ class CustomLayout(FloatLayout):
         # let's add a Widget to this layout
         self.add_widget(
             Button(
-                size_hint=(.5, .5),
-                pos_hint={'center_x': .5, 'center_y': .7},
+                size_hint=(1, 0.5),
+                pos_hint={'top': 1},
                 background_normal='',
                 background_color=(1, .3, .4, .85),
                 disabled=True))
@@ -29,15 +29,15 @@ class CustomLayout(FloatLayout):
 
         self.add_widget(AsyncImage(source=self.image,
                                    size_hint=(.3, .3),
-                                   pos_hint={'center_x': .5, 'center_y': .75}))
+                                   pos_hint={'center_x': .5, 'center_y': .8}))
 
         self.add_widget(Label(text=self.title,
                               size_hint=(.5, .5),
-                              pos_hint={'center_x': .5, 'center_y': .55}))
+                              pos_hint={'center_x': .5, 'center_y': .6}))
 
         self.add_widget(Label(text=self.subtitle,
                               size_hint=(.5, .5),
-                              pos_hint={'center_x': .5, 'center_y': .5}))
+                              pos_hint={'center_x': .5, 'center_y': .55}))
 
         with self.canvas.before:
             Color(1, 1, 1, 1)  # green; colors range from 0-1 instead of 0-255
@@ -68,7 +68,6 @@ class MainApp(App):
         carousel = Carousel(direction='right')
 
         for item in listOfModels:
-            self.root = root = item
 
             carousel.add_widget(item)
 
